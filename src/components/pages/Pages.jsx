@@ -7,7 +7,8 @@ import {
 } from "react-router-dom";
 import { Home } from '../home/Home';
 import { About } from './About';
-import {Services} from '../home/Services';
+import {Services} from '../pages/Services';
+import { Portfolio } from './Portfolio';
 
 export const Pages = () => {
   return ( 
@@ -18,6 +19,7 @@ export const Pages = () => {
           <Route exact path= '/' component={Home} />
           <Route exact path= '/about' component={About} />
           <Route exact path= '/services' component={Services} />
+          <Route exact path= '/portfolio' component={Portfolio} />
         </Switch>
     </Router></>
     );
